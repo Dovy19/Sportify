@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Roboto_Mono } from "next/font/google"; // Correct imports for valid fonts
 import "./globals.css";
+import { Provider } from "./provider";
+import Header from "@/components/Navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// Inter font for sans-serif and Roboto Mono for monospace
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const robotoMono = Roboto_Mono({
+  variable: "--font-roboto-mono",
   subsets: ["latin"],
 });
 
@@ -24,10 +27,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${inter.variable} ${robotoMono.variable} antialiased`}>
+        <div className="container mx-auto px-4 max-w-screen-2xl ">
+          <Provider>
+            <Header />
+            {children}
+          </Provider>
+        </div>
       </body>
     </html>
   );
