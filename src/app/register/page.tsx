@@ -60,8 +60,8 @@ export default function Register() {
                   />
                 </div>
         
-                <button className="w-full border border-solid border-black py-1.5 mt-2.5 rounded
-                transition duration-150 ease hover:bg-black">
+                <button className="cursor-pointer w-full border border-solid border-black py-1.5 mt-2.5 rounded
+                transition duration-150 ease hover:bg-black/10">
                   Sign up
                 </button>
         

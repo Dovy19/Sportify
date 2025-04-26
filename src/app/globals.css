@@ -7,6 +7,9 @@
     .shadow-inner-main-sm {
       box-shadow: inset 0px 5px 10px rgba(44, 251, 205, 0.7), 0px px 1px rgba(44, 251, 205, 0.7); 
     }
+    .display-text-font {
+      font-family: var(--font-bebas-neue), sans-serif ;
+    }
     .sportify-navbar-bg {
       background: linear-gradient(135deg, rgba(65, 65, 65, 0.6) 10%, rgba(18, 18, 18, 0.6) 10%,rgba(18, 18, 18, 0.6) 90%, rgba(65, 65, 65, 0.6) 90%);
     }
@@ -14,7 +17,7 @@
       background: linear-gradient(135deg, rgba(65, 65, 65, 0.3) 10%, rgba(18, 18, 18, 0.9) 10%,rgba(18, 18, 18, 0.9) 90%, rgba(65, 65, 65, 0.3) 90%);
     }
     .drop-shadow-test {
-      filter: drop-shadow(0 0 0.7rem #2cfbcd);
+      filter: drop-shadow(0 0 0.2rem #2cfbcd);
     }
     .shadow-inner-test {
       box-shadow: inset 10px 0px 15px -10px rgba(0, 0, 0, 0.9), inset -10px 0px 15px -10px rgba(0, 0, 0, 0.3);
@@ -30,6 +33,7 @@
     }
     .background-test {
       background: linear-gradient(135deg,rgba(255, 255, 255, 0.05) 0%, rgba(0, 0, 0, 0.85) 50%, rgba(0, 0, 0, 0.85) 85%, rgba(255, 255, 255, 0.05) 100%);
+      
     }
     .diagonal-div1 {
       width: 12.5rem;
@@ -76,13 +80,22 @@
       left: 21%;
     }
   }
+  .text-shadow-test {
+    text-shadow: 1px 1px 2px black;
+  }
 
 body {
     background-color: #121212;
+    background: linear-gradient(45deg, #000000 5%, #1a1a1a 35%,  #1a1a1a 85%, #000000);
+    min-height: 100vh;
+    font-family: var(--font-inter);
+
+}
+
+.main-page {
+    background-color: #121212;
     background-image: radial-gradient(circle, rgba(255,255,255,0.2) 1px, transparent 1px);
     background-size: 20px 20px, 100% 100%;
-    min-height: 100vh;
-
 }
 
 :root {
@@ -119,6 +132,15 @@ body {
     --sidebar-border: oklch(0.922 0 0);
     --sidebar-ring: oklch(0.708 0 0);
 }
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+*/
 
 .dark {
     --background: oklch(0.145 0 0);

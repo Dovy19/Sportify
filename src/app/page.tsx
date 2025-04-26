@@ -1,5 +1,8 @@
 
 import HeroSection from "@/components/hero/hero-section";
+import HowItWorks from "@/components/hero/how-it-works";
+import FeatureHighlights from "@/components/hero/feature-highlights";
+import WhoItsFor from "@/components/hero/who-its-for";
 
 export default function Home() {
  
@@ -23,13 +26,18 @@ export default function Home() {
   ]
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center ">
+    <main className="flex min-h-screen flex-col items-center justify-center main-page">
       <HeroSection
       images1={images1}
       images2={images2}
       heading="Sports Graphics"
       subheading="into shareable visuals —"
       />
+      {/* <div className="h-[500px] w-full bg-[#121212]"> */}
+      <HowItWorks />
+      <FeatureHighlights />
+      <WhoItsFor />
+      {/* </div> */}
     </main>
   );
 }

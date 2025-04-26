@@ -1,7 +1,10 @@
 "use client";
+
+
 import { FormEvent, useState, useEffect } from "react";
 import { signIn, useSession } from "next-auth/react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
+import { toast } from "sonner";
 import Link from "next/link";
 import Loading from "./loading";
 
@@ -9,6 +12,15 @@ export default function Login() {
     const [error, setError] = useState("");
     const router = useRouter();
     const { status } = useSession();
+
+    const searchParams = useSearchParams();
+    const callbackMessage = searchParams.get("callbackMessage");
+
+    useEffect(() => {
+        if (callbackMessage === "auth") {
+         toast.error("You must be logged in to access this page.");
+        }
+    }, [callbackMessage]);
 
     useEffect(() => {
         if (status === "authenticated") {
@@ -80,7 +92,7 @@ export default function Login() {
                     />
                 </div>
                 
-                <button className="w-full border border-solid border-black rounded">
+                <button className="cursor-pointer w-full border border-solid border-black rounded">
                     Sign In
                 </button>
                 
@@ -95,14 +107,14 @@ export default function Login() {
                     <button
                         type="button"
                         onClick={() => handleOAuthSignIn("google")}
-                        className="w-full py-2 bg-blue-500 text-white rounded-md"
+                        className="cursor-pointer w-full py-2 bg-blue-500 text-white rounded-md"
                     >
                         Sign In with Google
                     </button>
                     <button
                         type="button"
                         onClick={() => handleOAuthSignIn("github")}
-                        className="w-full py-2 bg-gray-800 text-white rounded-md"
+                        className="cursor-pointer w-full py-2 bg-gray-800 text-white rounded-md"
                     >
                         Sign In with GitHub
                     </button>

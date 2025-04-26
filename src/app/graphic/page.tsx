@@ -1,7 +1,9 @@
-export default function Graphic() {
+import Graphic from "./graphic-page"
+
+export default function GraphicPage() {
     return (
-        <div className="text-2xl font-bold text-white text-center">
-            CREATE A GRAPHIC
-        </div>
+        <>
+        <Graphic />
+        </>
     )
 }

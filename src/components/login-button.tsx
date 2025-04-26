@@ -13,7 +13,7 @@ export default function LoginButton() {
   if (status === "authenticated") {
     return (
       <button
-        className="text-white text-lg font-medium hover:text-teal-300 transition duration-300"
+        className="text-white text-lg font-medium hover:text-teal-300 transition duration-300 cursor-pointer"
         onClick={() => {
           signOut({ callbackUrl: "/" });
         }}

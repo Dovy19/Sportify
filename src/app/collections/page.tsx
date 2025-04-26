@@ -1,7 +1,14 @@
-export default function Collections() {
-    return (
-        <div className="text-2xl font-bold text-white text-center">
-            COLLECTIONS
-        </div>
-    )
-}
+import CollectionsComponentPage from "./collections-component";
+
+const CollectionsPage = async () => {
+  // Simulate an async operation (e.g., fetching data)
+  await new Promise((resolve) => setTimeout(resolve, 1000)); // Example delay
+
+  return (
+    <div>
+      <CollectionsComponentPage />
+    </div>
+  );
+};
+
+export default CollectionsPage;
