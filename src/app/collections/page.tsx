@@ -17,11 +17,8 @@ const CollectionsComponentPage = () => {
   
   useEffect(() => {
     // Only fetch graphics when session is ready and authenticated
-    if (status === 'authenticated' && session?.user?.id) {
+    if (session?.user?.id) {
       fetchGraphics(session.user.id);
-    } else if (status === 'unauthenticated') {
-      // User is definitely not logged in
-      setIsLoading(false);
     }
     // We don't set loading to false for 'loading' status
   }, [session, status]);
@@ -255,13 +252,13 @@ const CollectionsComponentPage = () => {
                     </div>
                   </div>
                 </div>
-                <p className="mt-3 text-sm text-[#2cfbcd]">
+                {/* <p className="mt-3 text-sm text-[#2cfbcd]">
                   {new Date(graphic.createdAt).toLocaleDateString(undefined, {
                     year: 'numeric',
                     month: 'short',
                     day: 'numeric'
                   })}
-                </p>
+                </p> */}
               </div>
             ))}
           </div>
