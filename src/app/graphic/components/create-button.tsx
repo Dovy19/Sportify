@@ -62,9 +62,13 @@ export default function CreateButton({setActiveImage, prompt, setIsImageLoading,
           )}
             <div className="flex gap-4">
                 {/* Create button */}
-                <button onClick={onCapture} className=" flex flex-1 cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#2cfbcd] text-black hover:bg-[#20dbb1] transition-colors text-sm font-bold leading-normal tracking-[0.015em]">
-                    <span className="truncate">Save to Collections</span>
-                </button>
+              <button 
+                onClick={onCapture} 
+                className="flex flex-1 cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-[#2cfbcd] text-black hover:bg-[#20dbb1] active:bg-[#1dc0a0] transition-colors text-sm font-bold leading-normal tracking-[0.015em]"
+                style={{ touchAction: 'manipulation' }}
+              >
+                <span className="truncate">Save to Collections</span>
+              </button>
 
                 {/* Upload Image button */}
                 <button className="flex cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#2A2A2A] text-white hover:bg-[#3A3A3A] transition-colors text-sm font-bold leading-normal tracking-[0.015em]">

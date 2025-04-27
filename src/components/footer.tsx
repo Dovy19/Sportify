@@ -48,12 +48,12 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/templates" className="text-gray-400 hover:text-[#2cfbcd] transition-colors">
-                  Templates
+                <Link href="/customize" className="text-gray-400 hover:text-[#2cfbcd] transition-colors">
+                  Customize
                 </Link>
               </li>
               <li>
-                <Link href="/pricing" className="text-gray-400 hover:text-[#2cfbcd] transition-colors">
+                <Link href="/" className="text-gray-400 hover:text-[#2cfbcd] transition-colors">
                   Pricing
                 </Link>
               </li>
@@ -65,22 +65,22 @@ const Footer = () => {
             <h3 className="font-semibold text-white mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/about" className="text-gray-400 hover:text-[#2cfbcd] transition-colors">
+                <Link href="/" className="text-gray-400 hover:text-[#2cfbcd] transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-gray-400 hover:text-[#2cfbcd] transition-colors">
+                <Link href="/" className="text-gray-400 hover:text-[#2cfbcd] transition-colors">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="/careers" className="text-gray-400 hover:text-[#2cfbcd] transition-colors">
+                <Link href="/" className="text-gray-400 hover:text-[#2cfbcd] transition-colors">
                   Careers
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-400 hover:text-[#2cfbcd] transition-colors">
+                <Link href="/" className="text-gray-400 hover:text-[#2cfbcd] transition-colors">
                   Contact
                 </Link>
               </li>
@@ -113,13 +113,13 @@ const Footer = () => {
           </div>
           
           <div className="flex flex-wrap justify-center space-x-6">
-            <Link href="/privacy" className="text-gray-500 hover:text-[#2cfbcd] text-sm mb-2 md:mb-0 transition-colors">
+            <Link href="/" className="text-gray-500 hover:text-[#2cfbcd] text-sm mb-2 md:mb-0 transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="text-gray-500 hover:text-[#2cfbcd] text-sm mb-2 md:mb-0 transition-colors">
+            <Link href="/" className="text-gray-500 hover:text-[#2cfbcd] text-sm mb-2 md:mb-0 transition-colors">
               Terms of Service
             </Link>
-            <Link href="/cookies" className="text-gray-500 hover:text-[#2cfbcd] text-sm mb-2 md:mb-0 transition-colors">
+            <Link href="/" className="text-gray-500 hover:text-[#2cfbcd] text-sm mb-2 md:mb-0 transition-colors">
               Cookie Policy
             </Link>
           </div>
