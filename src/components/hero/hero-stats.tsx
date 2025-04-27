@@ -18,7 +18,7 @@ export default function HeroStats() {
                     <p className="text-white text-xl md:text-2xl lg:text-3xl mb-6 font-bold">Graphics Made Monthly!</p>
                 </div>
                 <Link href="/graphic">
-                    <button className="rounded-full main-color-bg text-white font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl drop-shadow-test p-3 sm:p-4 lg:p-5 cursor-pointer flex items-center justify-center">
+                    <button className="md:ml-[3.5rem] rounded-full main-color-bg text-white font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl drop-shadow-test p-3 sm:p-4 lg:p-5 cursor-pointer flex items-center justify-center">
                         Get Started
                     </button>
                 </Link>
